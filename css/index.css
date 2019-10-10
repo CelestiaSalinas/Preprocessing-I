@@ -133,131 +133,94 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
-  background-color: #9687f5;
+  background-color: #181721;
 }
+/* desktop */
 @media (max-width: 2000px) {
   * {
-    border: 1px red solid;
+    border: 0;
   }
   nav a {
     text-decoration: none;
     color: black;
     justify-content: space-around;
-    font-size: 2rem;
   }
   nav {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    padding-left: 2vw;
-    width: 100%;
+    font-size: 3rem;
   }
   h1 {
     font-size: 5rem;
   }
   p {
     font-size: 2.4rem;
+    padding: 1vw;
   }
   img {
     width: 60vw;
   }
-  .container {
-    display: flex;
-    flex-direction: row-reverse;
+  .big-container .container {
     width: 100%;
-    margin: auto;
-    align-items: right;
+    height: 100%;
   }
-  .container .top {
+  .big-container .container .top {
     justify-content: space-around;
     padding: 2vw;
-    margin: 5%;
+    background-color: #9687f5;
   }
-  .header {
+  .big-container .container .header {
     width: 100%;
     display: flex;
   }
-  .header .portrait-div {
+  .big-container .container .header .portrait-div {
+    display: flex;
     width: 100%;
     padding: 2vw;
   }
-  .header .portrait {
-    width: 40vw;
+  .big-container .container .header .portrait {
+    width: 30vw;
+    align-self: center;
   }
-  .header-2 .name {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 30vw;
-  }
-  .header-2 .intro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 50vw;
-    padding-bottom: 40px;
-  }
-}
-@media (max-width: 900px) {
-  * {
-    border: 1px blue solid;
-  }
-  nav a {
-    text-decoration: none;
-    color: black;
-    justify-content: space-around;
-    font-size: 2rem;
-  }
-  nav {
+  .big-container .container .header .header-desktop {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-left: 2vw;
-    width: 100%;
+    justify-content: flex-end;
+    background-color: #9687f5;
   }
-  h1 {
-    font-size: 5rem;
-  }
-  p {
-    font-size: 2.4rem;
-  }
-  img {
-    width: 60vw;
-  }
-  .container {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    margin: auto;
-    align-items: right;
-  }
-  .container .top {
-    justify-content: space-around;
-    padding: 2vw;
-    margin: 5%;
-  }
-  .header {
-    width: 100%;
-    display: flex;
-  }
-  .header .portrait-div {
-    width: 100%;
-    padding: 2vw;
-  }
-  .header .portrait {
+  .big-container .container .header .header-desktop .name-desktop {
     width: 40vw;
+    height: 6vw;
+    padding: 2vw;
   }
-  .header-2 .name {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 30vw;
+  .big-container .container .header .header-desktop .intro-desktop {
+    width: 80%;
+    padding: 2vw;
   }
-  .header-2 .intro {
+  .big-container .container .exp {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 50vw;
-    padding-bottom: 40px;
+    flex-direction: column;
+    width: 100%;
+    padding: 5vw;
+  }
+  .big-container .container .exp .images {
+    width: 100%;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+  }
+  .big-container .container .exp .desc {
+    color: white;
+  }
+  .big-container .container .exp .footer {
+    color: white;
+  }
+  .big-container .container .header-tablet {
+    display: none;
+  }
+  .big-container .container .header-tablet .name {
+    display: none;
+  }
+  .big-container .container .header-tablet .intro {
+    display: none;
   }
 }

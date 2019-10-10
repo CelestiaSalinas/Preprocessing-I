@@ -137,148 +137,110 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
-  background-color: #9687f5;
+  background-color: #181721;
 }
+
+/* desktop */
 @media (max-width: 2000px) {
+  @variable-color: #9687f5;
+
+  nav a {
+    text-decoration: none;
+    color: black;
+    justify-content: space-around;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 2.4rem;
+    padding: 1vw;
+  }
+
+  img {
+    width: 60vw;
+  }
+  .big-container {
+    .container {
+      width: 100%;
+      height: 100%;
+      .top {
+        justify-content: space-around;
+        padding: 2vw;
+        /*variable used*/
+        background-color: @variable-color;
+      }
+
+      .header {
+        width: 100%;
+        display: flex;
+        .portrait-div {
+          display: flex;
+          width: 100%;
+          padding: 2vw;
+        }
+        .portrait {
+          width: 30vw;
+          align-self: center;
+        }
+        .header-desktop {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          background-color: @variable-color;
+          .name-desktop {
+            width: 40vw;
+            height: 6vw;
+            padding: 2vw;
+          }
+          .intro-desktop {
+            width: 80%;
+            padding: 2vw;
+          }
+        }
+      }
+      .exp {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 5vw;
+        .images {
+          width: 100%;
+          padding-bottom: 2vw;
+          padding-top: 2vw;
+        }
+        .desc {
+          color: white;
+        }
+        /*mix-ins*/
+        .footer {
+          .desc();
+        }
+      }
+      .header-tablet {
+        display: none;
+        .name {
+          .header-tablet();
+        }
+
+        .intro {
+          .header-tablet();
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
   * {
     border: 1px red solid;
-  }
-  nav a {
-    text-decoration: none;
-    color: black;
-    justify-content: space-around;
-    font-size: 2rem;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 2vw;
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 5rem;
-  }
-
-  p {
-    font-size: 2.4rem;
-  }
-
-  img {
-    width: 60vw;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    margin: auto;
-    align-items: right;
-    .top {
-      justify-content: space-around;
-      padding: 2vw;
-      margin: 5%;
-    }
-  }
-  .header {
-    width: 100%;
-    display: flex;
-    .portrait-div {
-      width: 100%;
-      padding: 2vw;
-    }
-    .portrait {
-      width: 40vw;
-    }
-  }
-  .header-2 {
-    .name {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-left: 30vw;
-    }
-
-    .intro {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-left: 50vw;
-      padding-bottom: 40px;
-    }
-  }
-}
-
-@media (max-width: 900px) {
-  * {
-    border: 1px blue solid;
-  }
-  nav a {
-    text-decoration: none;
-    color: black;
-    justify-content: space-around;
-    font-size: 2rem;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 2vw;
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 5rem;
-  }
-
-  p {
-    font-size: 2.4rem;
-  }
-
-  img {
-    width: 60vw;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    margin: auto;
-    align-items: right;
-    .top {
-      justify-content: space-around;
-      padding: 2vw;
-      margin: 5%;
-    }
-  }
-  .header {
-    width: 100%;
-    display: flex;
-    .portrait-div {
-      width: 100%;
-      padding: 2vw;
-    }
-    .portrait {
-      width: 40vw;
-    }
-  }
-  .header-2 {
-    .name {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-left: 30vw;
-    }
-
-    .intro {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-left: 50vw;
-      padding-bottom: 40px;
-    }
   }
 }
